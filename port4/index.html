@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <section id="Home" class="mb-20">
+    <div id="nav-bar" class="bg-blue-700 fixed w-screen flex items-center justify-between z-20">
+        <div id="profile" class="w-[10vw] hidden my-5 transition-all duration-100">
+            <img src="profile.png" alt="profile" class="rounded-full w-auto">
+        </div>
+        <div>
+            <p class="font-bold text-2xl text-white py-2 ml-5">My Portfolio</p>
+        </div>
+        <div class="flex flex-col text-center md:inline">
+            <i id="bars" class="fa-solid fa-bars mr-10 text-xl block z-20 md:hidden"></i>
+            <div id="menu" class="flex items-center justify-center absolute left-0 -top-60 flex-col w-screen py-4 opacity-0 md:opacity-100 md:py-0 md:relative md:mr-10 md:top-0 md:flex-row md:w-max transition-all duration-300">
+                <a href="#Home" class="px-3 py-2 hover:underline text-white text-xl font-bold hover:text-blue-600">Home</a>
+                <a href="#about" class="px-3 py-2 hover:underline text-white text-xl font-bold hover:text-blue-600">About</a>
+                <a href="#projects" class="px-3 py-2 hover:underline text-white text-xl font-bold hover:text-blue-600">Projects</a>
+                <a href="#contact" class="px-3 py-2 hover:underline text-white text-xl font-bold hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center justify-between flex-col-reverse md:flex-row md:justify-center lg:flex-row-reverse mx-10 md:mx-0 pt-32 md:pt-40 headline">
+        <div class="sm:w-[90%] md:w-[50%]">
+            <div class="flex items-center flex-col sm:block sm:ml-5 md:ml-0">
+                <p class="text-[5.5vw] sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl mb-3 font-extrabold">I'm <span class="text-blue-500">Ajith Reddy</span></p>
+                <p class="text-blue-600 w-max text-[4vw] sm:text-sm lg:text-base py-1 px-2 mb-5 rounded font-bold">Python Developer| Front-end Web Developer</p>
+                <p class="w-[80%] mb-5"> I specialize in Python frameworks like Django and Flask to create dynamic and efficient websites. Skilled in database integration, API utilization, and adept at problem-solving.</p>
+                <div class="w-max">
+                    <a href="#_" class="px-5 py-1 relative rounded-full border-[2px] border-blue-600 group overflow-hidden bg-transparent text-black font-semibold inline-block">
+                        <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-in-out transform translate-y-0 bg-blue-600 group-hover:h-full opacity-90"></span>
+                        <span class="relative group-hover:text-white">Resume</span>
+                    </a>
+                    <a href="#_" class="px-5 py-1 relative rounded-full border-[2px] border-blue-600 group overflow-hidden bg-transparent text-black font-semibold inline-block">
+                        <span class="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-in-out transform translate-y-0 bg-blue-600 group-hover:h-full opacity-90"></span>
+                        <span class="relative group-hover:text-white">Portfolio</span>
+                    </a>
+                </div>
+            </div>
+            <div class="space-x-3 mt-6 md:mt-4 text-white py-10">
+              <a href="https://www.facebook.com/ajith.syamala.5/"> <i
+                      class="fa-brands fa-facebook-f bg-blue-600 hover:text-blue-500 hover:bg-white rounded-full px-3 py-[11px] w-12 h-12 text-center text-2xl "></i>
+              </a>
+              <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram bg-blue-600 hover:text-red-500 hover:bg-white rounded-full px-[10px] py-[11px] w-12 h-12 text-center text-2xl"></i>
+              </a>
+              <a href="https://www.linkedin.com/feed/"> <i class="fa-brands fa-linkedin bg-blue-600 hover:text-yellow-500 hover:bg-white rounded-full px-3 py-[11px] w-12 h-12 text-center text-2xl"></i>
+              </a>
+              <a href="https://github.com/ajithreddy1441"> <i class="fa-brands fa-github bg-blue-600 hover:text-indigo-600 hover:bg-white rounded-full px-[10px] py-[11px] w-12 h-12 text-center text-2xl"></i>
+              </a>
+            </div>
+        </div>
+        <div class="w-[50vw] mb-10 md:mr-20 sm:mb-0 sm:w-[45%] md:w-[28%] slide-left relative">
+            <img src="profile.png" alt="profile" class=" w-auto item rounded-full">
+        </div>
+    </div>
+  </section>  
+  <section class="about-me h-max m-7" id="about">
+    <h2 class="grid justify-item-center text-center bg-blue-500 md:items-center text-2xl  font-semibold border-blue-900 border-b-4  mb-4">About</h2>
+    <div class="grid justify-item-center gap-8 pl-8 pr-8 py-6">
+      <!-- Replace the following cards with your project details -->
+      <div class="bg-white rounded-lg p-4 shadow-md ">
+        <h3 class="text-xl font-semibold mb-2 ">I am </h3>
+        <p>
+          Description of Project 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin et tincidunt
+          nunc. Suspendisse auctor, odio sit amet mattis luctus, odio purus luctus velit, nec tincidunt nisi
+          nulla ac lorem.
+        </p>
+      </div>
+      <div class="flex flex-wrap items-center justify-center lg:grid lg:grid-cols-3">
+        <!-- Replace the following cards with your project details -->
+        <div class="bg-white m-7 rounded-full flex-col md:flex-row flex justify-center items-center w-80 p-4 shadow-md">
+          <img src="img3.jpeg" class=" rounded-full w-20 h-20 mt-2">
+          <h3 class="text-xl font-semibold ml-10 md:ml-20 lg:ml-40 mr-5">Html</h3>
+        </div>
+
+        <div class="bg-white m-7 rounded-full flex-col md:flex-row flex justify-center items-center w-80 p-4 shadow-md">
+          <img src="img3.jpeg" class=" rounded-full w-20 h-20 mt-2">
+          <h3 class="text-xl font-semibold ml-10 md:ml-20 lg:ml-40 mr-5">Css</h3>
+          </div>
+
+        <div class="bg-white m-7 rounded-full flex-col md:flex-row flex justify-center items-center w-80 p-4 shadow-md">
+          <img src="img3.jpeg" class=" rounded-full w-20 h-20 mt-2">
+          <h3 class="text-xl font-semibold ml-10 md:ml-20 lg:ml-32 mr-5">Java Script</h3>
+        </div>
+        <!-- Replace the following cards with your project details -->
+        <div class="bg-white m-7 rounded-full flex-col md:flex-row flex justify-center items-center w-80 p-4 shadow-md">
+          <img src="img3.jpeg" class=" rounded-full w-20 h-20 mt-2">
+          <h3 class="text-xl font-semibold ml-10 md:ml-20 lg:ml-32 mr-5">Tailwind</h3>
+        </div>
+
+        <div class="bg-white m-7 rounded-full flex-col md:flex-row flex justify-center items-center w-80 p-4 shadow-md">
+          <img src="img3.jpeg" class=" rounded-full w-20 h-20 mt-2">
+          <h3 class="text-xl font-semibold ml-10 md:ml-20 lg:ml-32 mr-5">Mysql</h3>
+          </div>
+
+        <div class="bg-white m-7 rounded-full flex-col md:flex-row flex justify-center items-center w-80 p-4 shadow-md">
+          <img src="img3.jpeg" class=" rounded-full w-20 h-20 mt-2">
+          <h3 class="text-xl font-semibold ml-10 md:ml-20 lg:ml-32 mr-5">python</h3>
+        </div>
+      </div>
+  </section>
+
+            <section class="about-me h-max" id="projects">
+                <h2 class="grid justify-item-center text-center bg-blue-500 md:items-center text-2xl font-semibold border-blue-900 border-b-4  mb-4">Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pl-8 pr-8 py-6">
+                  <!-- Replace the following cards with your project details -->
+                  <div class="bg-white rounded-lg p-4 shadow-md ">
+                    <h3 class="text-xl font-semibold mb-2">Project 1</h3>
+                    <img src="img3.jpeg" class=" rounded-full w-24 h-24 ">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <h2>Restaurant Website UI</h2>
+            <p>Build Using HTML,CSS,JS</p>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source <i
+              class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i
+              class="fas fa-external-link-alt"></i></a>
+          </button>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Project 2</h3>
+                    <img src="img3.jpeg" class=" rounded-full w-24 h-24">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <h2>Restaurant Website UI</h2>
+            <p>Build Using HTML,CSS,JS</p>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source <i
+              class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i
+              class="fas fa-external-link-alt"></i></a>
+          </button>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Project 3</h3>
+          <img src="img3.jpeg" class=" rounded-full w-24 h-24">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <h2>Restaurant Website UI</h2>
+            <p>Build Using HTML,CSS,JS</p>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source <i
+              class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i
+              class="fas fa-external-link-alt"></i></a>
+          </button>
+                  </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pl-8 pr-8 py-6">
+                  <!-- Replace the following cards with your project details -->
+                  <div class="bg-white rounded-lg p-4 shadow-md ">
+                    <h3 class="text-xl font-semibold mb-2">Project 4</h3>
+                    <img src="img3.jpeg" class=" rounded-full w-24 h-24 ">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <h2>Restaurant Website UI</h2>
+            <p>Build Using HTML,CSS,JS</p>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source <i
+              class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i
+              class="fas fa-external-link-alt"></i></a>
+          </button>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Project 5</h3>
+                    <img src="img3.jpeg" class=" rounded-full w-24 h-24">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <h2>Restaurant Website UI</h2>
+            <p>Build Using HTML,CSS,JS</p>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source <i
+              class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i
+              class="fas fa-external-link-alt"></i></a>
+          </button>
+                  </div>
+
+                  <div class="bg-white rounded-lg p-4 shadow-md">
+                    <h3 class="text-xl font-semibold mb-2">Project 6</h3>
+          <img src="img3.jpeg" class=" rounded-full w-24 h-24">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <h2>Restaurant Website UI</h2>
+            <p>Build Using HTML,CSS,JS</p>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://github.com/sanketbodke/Restaurant-Website" target="blank">View source <i
+              class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button class="bg-blue-500 rounded-full px-2"><a href="https://fervent-lamarr-2bc6cf.netlify.app/" target="blank">Try it Live <i
+              class="fas fa-external-link-alt"></i></a>
+          </button>
+                  </div>
+                </div>
+             </section>
+             <br><br>
+
+              <section class="h-max" id="contact">
+                 <h2 class="grid justify-item-center text-center bg-blue-500 md:items-center text-2xl font-semibold border-blue-900 border-b-4  mb-4">Contact</h2>
+
+                <form action="#" class="text-center py-6">
+                  <label for="lname" class="font-bold text-blue-500">Name</label><br>
+                  <input type="text" id="fname" class="h-8 w-96 rounded-md border border-slate-300 text-sm pl-2 outline-blue-600 shadow-sm text-black"><br>
+                  <label for="lname" class="font-bold text-blue-500">Email</label><br>
+                  <input type="text" id="lname" class="h-8 w-96 rounded-md border border-slate-300 text-sm pl-2 outline-blue-600 shadow-sm"><br>
+                  <label for="lname" class="font-bold text-blue-500">Message</label><br>
+                  <input type="text" id="fname" class="h-32 w-96  rounded-md border border-slate-300 text-sm pl-2 outline-blue-600 shadow-sm"><br>
+                  <div class="pt-7 text-center">
+                  <input type="submit" value="Submit" class="bg-blue-500 rounded-full px-5 ">
+                </div>
+                </form>
+              </section>
+              <div class="space-x-3 md:mt-4 text-white text-center py-10">
+                <a href="https://www.facebook.com/ajith.syamala.5/"> <i
+                        class="fa-brands fa-facebook-f bg-blue-600 hover:text-blue-500 hover:bg-white rounded-full px-3 py-[11px] w-12 h-12 text-center text-2xl "></i>
+                </a>
+                <a href="https://www.instagram.com/"> <i class="fa-brands fa-instagram bg-blue-600 hover:text-red-500 hover:bg-white rounded-full px-[10px] py-[11px] w-12 h-12 text-center text-2xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/feed/"> <i class="fa-brands fa-linkedin bg-blue-600 hover:text-yellow-500 hover:bg-white rounded-full px-3 py-[11px] w-12 h-12 text-center text-2xl"></i>
+                </a>
+                <a href="https://github.com/ajithreddy1441"> <i class="fa-brands fa-github bg-blue-600 hover:text-indigo-600 hover:bg-white rounded-full px-[10px] py-[11px] w-12 h-12 text-center text-2xl"></i>
+                </a>
+              </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
